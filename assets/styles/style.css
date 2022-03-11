@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@500;700&family=Indie+Flower&family=Poiret+One&family=Sacramento&family=Satisfy&display=swap');
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Poiret One', sans-serif;
+    margin: 0px;
+    padding: 0px;
+	
+	background-color:#ECF9FF;
+	/*background-color:#0F3; /*hijau*/
+
+ }
+
+.jumbotron{
+	position:relative; /**/
+	overflow: hidden;
+	
+	font-family: 'Amatic SC', sans-serif;	
+    font-size: 20px;
+    color: white;
+	letter-spacing:10px;
+}
+
+.judul{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 100%;
+  	background: rgba(16,175,234,0.4);
+	
+	font-weight:bold;
+	opacity: 0;
+	transition: opacity .5s;
+	
+	/*center*/
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	flex-direction:column;
+	
+	/*biar judul gk hhilang karna blur*/
+	z-index: 1;
+}
+
+.img-header{
+	width: 100%;
+  	/*height: auto;*/
+	margin:0px;
+	padding:0px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center;	
+}
+
+.featured-image {
+	line-height: 0;	
+}
+
+
+
+.jumbotron:hover .judul{
+	opacity:1;
+}
+
+.featured-image .img-header{
+	filter: blur(0px);
+	transition: filter 0.3s ease-in;
+	transform: scale(1.1);	/* full layout */
+}
+
+.jumbotron:hover .featured-image .img-header{
+	filter: blur(2px);
+}
+
+header {
+    display: inline;
+	
+ }
+ 
+nav{
+	padding: 5px;
+	background: rgba(16,175,234,1);
+	position: sticky;
+  	top: 0;
+	z-index:2;
+}
+
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+	padding-left:10px;
+}
+
+
+
+li:hover a {
+	color:#000;
+    font-weight: bold;
+}
+
+
+nav li {
+    display: inline;
+    list-style-type: none; /* untuk menghilangkan garis, warna dan titik pada <li> */
+    margin-right: 10px;
+}
+
+main {
+	display:flex;
+	flex-direction:column;
+ }
+ 
+.flex-basis-35{
+	flex-basis:35%;
+	padding:20px;
+}
+
+.featured-image-2 {
+    width: 90%;
+	justify-content: center; 
+	align-items: center;
+}
+
+ h2, h3 {
+    color: #00a2c6;
+	text-align:center;
+ }
+
+.profile header {
+    text-align: center;
+}
+
+.flex{
+	display:flex;
+}
+
+.flex-basis-65{
+	flex-basis:65%;
+	padding:20px;	
+}
+
+.flex-basis-65 p{
+	letter-spacing:3px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+    padding: 20px;
+	
+	padding-top:50px;
+	margin:auto;
+
+	top:0px;
+	/*background-color:#ECF9FF; /*agak putih */
+	
+ }
+
+.narahubung a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.narahubung a:hover{
+    font-weight: bold;
+}
+
+#content {
+    /*float: left;
+    width: 75%;*/
+	flex-basis:100%;
+ }
+
+aside{
+	display:flex;
+	flex-direction:column;
+}
+
+.left{
+	text-align:left;
+}
+
+footer {
+    padding: 0.5px;
+    color: white;
+	
+  	background: rgba(16,175,234,1);
+    text-align: center;
+    font-weight: bold;
+ }
+
+section{
+	display:flex;
+	flex-direction:column;	
+	margin:auto;
+}
+
+.flex-row{
+	display:flex;
+/*	background-color:#ECF9FF;
+	background-color:#FF6; /*kuning */
+	padding:0px;
+	justify-content: center;
+}
+
+.flex-box-item{
+	display:flex;
+	
+	flex-direction:column;
+	flex-basis:30%;
+	background-color:white;
+/*	background-color:#69C0EF; /* biru*/
+	margin:10px;
+	padding:35px;
+	justify-content: center; /* align horizontal */
+	align-items: center; /*align vertical */	
+}
+
+.inverse{
+	
+	background-color:#ECF9FF;
+}
+
+.inverse:hover {
+	
+	background-color:#fff;
+}
+.bg-white{
+	background-color:white;
+}
+
+h4{
+	
+	text-align:center;
+	opacity:0;
+	}
+
+.btn a{	
+	box-shadow: 0 5px 5px 0 rgba(10, 15, 0, 0);
+	background-color:rgba(16,175,234,1);
+	border-radius: 30px;
+	padding:15px;
+	text-decoration:none;
+	background-image: linear-gradient(to right, rgba(16,175,234,0.5), rgba(47,63,232,0.5));
+	color:#FFF;	
+ 
+}
+
+.btn:hover a{
+	background-image: linear-gradient(to right, rgba(47,63,232,0.5), rgba(16,175,234,0.5));
+}
+.flex-box-item:hover {
+/*	background-color:#E3F4FD; /*putih ck biru*/
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+   	
+	background-color:#ECF9FF;
+	padding:20px;
+	font-size:16px;
+}
+
+.inverse:hover {
+	background-color:#fff;
+}
+
+.img {
+	height: 150px;
+	margin: 0 auto;
+ }
+ 
+.mid {
+	display:block;
+	margin: auto;
+}
+
+
+.flex-box-item:hover .img{
+	height:175px;	
+}
+
+.flex-box-item:hover h4{
+	opacity:1;
+	text-decoration:none;
+}
+
+.profile{
+	display:flex;
+}
+
+.img-2{
+	width:200px;
+	border-radius:100%;
+	margin:20px;
+}
+
+.img-3{
+	width:20px;
+	margin:10px;
+	margin-top:20px;
+}
+
+.kontak{
+	display:flex;
+	
+	flex-direction:column;
+	background-color:white;
+/*	background-color:#69C0EF; /* biru*/
+	padding:35px;
+	justify-content: center; /* align horizontal */
+	align-items: center; /*align vertical */	
+}
+
+.border-bottom{
+	border-bottom-style:inset;
+	border-bottom-color:rgba(16,175,234,1);
+	padding:20px;
+}
+/* untuk tampilan hp / progresif */
+ @media screen and (max-width: 823px) {
+	.jumbotron {
+		width:100%;
+		font-size: 10px;
+		padding: 5px;
+    	letter-spacing:2px;
+	}
+	
+	.judul {
+		opacity: 1;
+  	}
+	
+	
+	.img-header{
+		height: 800px;
+  		max-width:1000px;
+    	object-fit: cover;
+    	object-position: center;	
+	}
+	.logo-uigm{
+		width:150px;
+	}
+	
+  	.featured-image .img-header {
+    	filter: blur(2px);
+  	}
+	
+	
+	nav a {
+    	font-size: 12px;
+	}
+
+	#content,
+    aside {
+		flex-basis:100%;
+		margin:0px;		
+    }
+	main{
+		display:flex;
+		flex-direction:column;
+	}
+	
+	.flex{
+		flex-direction:column;	
+	}
+	.flex-row{
+		display:flex;
+		flex-direction:column;
+		
+	}
+	.card{
+		display:flex;
+	flex-direction:column;
+	}
+	
+ }
+ /* touchscreen :) */
+@media (hover: none) { 
+	.judul {
+		opacity: 1;
+  	}
+  	.featured-image .img-header {
+    	filter: blur(2px);
+  	}
+}
